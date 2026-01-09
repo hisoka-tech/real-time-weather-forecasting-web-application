@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Weather App</h2>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="error" class="error"></p>
+
+        <div id="weatherBox" class="weather hidden">
+            <h3 id="cityName"></h3>
+            <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="wind"></span> m/s</p>
+            <p><strong>Condition:</strong> <span id="condition"></span></p>
+        </div>
+        <!-- FORECAST -->
+        <div id="forecast" class="forecast hidden">
+            <h4>5-Day Forecast</h4>
+            <div id="forecastCards" class="forecast-cards">
+                <!-- JS will inject forecast day-cards here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
